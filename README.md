@@ -20,7 +20,7 @@ Given data on a customer, make an estimate on whether or not they are likely to 
 - Pickle the models.
 - Load the pickles in Jupyter notebooks to showcase the models using the test data.
 
-In summary: procure some data, process in pipelines, fit some models, pickle them, and evaluate the models.
+In summary: procure data, construct pipelines, fit models, pickle models, and evaluate models.
 
 ### Project Outcomes
 
