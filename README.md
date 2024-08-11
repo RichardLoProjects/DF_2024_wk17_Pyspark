@@ -25,7 +25,7 @@ In summary: procure data, construct pipelines, fit models, pickle models, and ev
 
 The project achieved (or did not achieve) the goals outlined in the project aims. More details are outlined here:
 
-- The project yielded seven datasets on customer churn, which can be found in the assets folder or from the following links: [1](<https://www.kaggle.com/datasets/rangalamahesh/bank-churn>), [2](<https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn>), [3](<https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset>), [4](<https://www.kaggle.com/datasets/santoshd3/bank-customers>), [5](<https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction>), [6](<https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction>), and [7](<https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers>).
+- Kaggle yielded seven datasets on customer churn, which can be found in the assets folder or from the following links: [1](<https://www.kaggle.com/datasets/rangalamahesh/bank-churn>), [2](<https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn>), [3](<https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset>), [4](<https://www.kaggle.com/datasets/santoshd3/bank-customers>), [5](<https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction>), [6](<https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction>), and [7](<https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers>).
 - Pyspark on Databricks was chosen to host the Jupyter notebooks since big organisations will tend to be working with big data. Pyspark offers computation through clusters to manage big data.
 
 ### Product Description
