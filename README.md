@@ -16,25 +16,36 @@ Given data on a customer, make an estimate on whether or not they are likely to 
 - Format, clean, validate, and integrate the datasets.
 - Prepare the dataset for machine learning (i.e. feature engineering), ensuring the final dataset is split into a train-test split.
 - Fit a variety of machine learning models (logistic regression, random forest, gradient boosted trees) on the training data to predict customer churn.
-- Pickle the models to showcase portability.
-- Load the pickles and evaluate models using the test data.
+- Evaluate models using the test data.
 
-In summary: procure data, construct pipelines, fit models, pickle models, and evaluate models.
+In summary: procure data, construct pipelines, fit models, and evaluate models.
 
 ### Project Outcomes
 
-The project achieved (or did not achieve) the goals outlined in the project aims. More details are outlined here:
+The project achieved the goals outlined in the project aims. More details are outlined here:
 
 - Kaggle yielded seven datasets on customer churn, which can be found in the assets folder or from the following links: [1](<https://www.kaggle.com/datasets/rangalamahesh/bank-churn>), [2](<https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn>), [3](<https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset>), [4](<https://www.kaggle.com/datasets/santoshd3/bank-customers>), [5](<https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction>), [6](<https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction>), and [7](<https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers>).
 - Pyspark on Databricks was chosen to host the Jupyter notebooks since big organisations will tend to be working with big data. Pyspark offers computation through clusters to manage big data.
+- A data pipeline was constructed to merge multiple datasets together into one cohesive dataframe to be fed into the machine learning pipeline. A main machine learning pipeline was constructed, which branched out into four variants: `logistic_regression`, `decision_tree`, `gradient_boosted_trees`, and `random_forest`. An additional comment is that PySpark's ML library was extremely friendly to the user because the ML objects had very similar methods which allowed classifiers to be easily swapped out with each other: only a single line of code needed to be changed to fit an entirely different model.
 
 ### Product Description
 
-The project produced several Python-pickle-objects containing trained machine learning models that predict customer churn based on the following features:
+The project produced five Jupyter notebooks in the `/databricks` folder:
 
-- feature 1...
+- `Explanatory Data Analysis.ipynb`: An initial investigation which uncovered that most of the data is similar.
+- `Data Pipeline Model.ipynb`: A test to ensure that the data pipeline is working as intended.
+- `Data Pipeline.ipynb`: The data pipeline which merges the datasets into one dataframe.
+- `Datapipeline EDA of Output.ipynb`: An investigation of the result.
+- `ML_Pipelines.ipynb`: Fitting various ml models, and using the "best" model to predict customer churn.
 
 ### Conclusion
 
+It was discovered that `decision_trees` seemed to solve customer churn better than the other models. Using accuracy as the metric, here's how the models performed:
 
+- logistic regression: `79.1%`
+- decision trees: `81.9%`
+- gradient boosted trees: `81.6%`
+- random forest: `79.1%`
+
+More metrics are reported in the `ML_Piplines` notebook.
 
