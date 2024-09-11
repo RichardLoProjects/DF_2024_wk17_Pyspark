@@ -40,12 +40,12 @@ The project produced five Jupyter notebooks in the `/databricks` folder:
 
 ### Conclusion
 
-It was discovered that `decision_trees` seemed to solve customer churn better than the other models. Using accuracy as the metric, here's how the models performed:
+It was discovered that `gradient_boosted_trees` seemed to solve customer churn better than the other models. Using accuracy as the metric, here's how the models performed:
 
-- logistic regression: `79.1%`
-- decision trees: `81.9%`
-- gradient boosted trees: `81.6%`
-- random forest: `79.1%`
+- logistic regression: `78.16%`
+- decision trees: `82.07%`
+- gradient boosted trees: `82.13%`
+- random forest: `80.64%`
 
-More metrics are reported in the `ML_Piplines` notebook.
+More metrics are reported in the `ML_Piplines` notebook such as: recall, precision, and AUC.
 
