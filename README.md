@@ -26,7 +26,7 @@ The project achieved the goals outlined in the project aims. More details are ou
 
 - Kaggle yielded seven datasets on customer churn, which can be found in the assets folder or from the following links: [1](<https://www.kaggle.com/datasets/rangalamahesh/bank-churn>), [2](<https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn>), [3](<https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset>), [4](<https://www.kaggle.com/datasets/santoshd3/bank-customers>), [5](<https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction>), [6](<https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction>), and [7](<https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers>).
 - Pyspark on Databricks was chosen to host the Jupyter notebooks since big organisations will tend to be working with big data. Pyspark offers computation through clusters to manage big data.
-- A data pipeline was constructed to merge multiple datasets together into one cohesive dataframe to be fed into the machine learning pipeline. A main machine learning pipeline was constructed, which branched out into four variants: `logistic_regression`, `decision_tree`, `gradient_boosted_trees`, and `random_forest`. An additional comment is that PySpark's ML library was extremely friendly to the user because the ML objects had very similar methods which allowed classifiers to be easily swapped out with each other: only a single line of code needed to be changed to fit an entirely different model.
+- A data pipeline was constructed to merge multiple datasets together into one cohesive dataframe to be fed into the machine learning pipeline. A main machine learning pipeline was constructed, which branched out into four variants: `logistic_regression`, `decision_tree`, `gbt` (gradient boosted trees), and `random_forest`. An additional comment is that PySpark's ML library was extremely friendly to the user because the ML objects had very similar methods which allowed classifiers to be easily swapped out with each other: only a single line of code needed to be changed to fit an entirely different model.
 
 ### Product Description
 
@@ -40,7 +40,7 @@ The project produced five Jupyter notebooks in the `/databricks` folder:
 
 ### Conclusion
 
-It was discovered that `gradient_boosted_trees` seemed to solve customer churn better than the other models. Using accuracy as the metric, here's how the models performed:
+It was discovered that `gbt` seemed to solve customer churn better than the other models. Using accuracy as the metric, here's how the models performed:
 
 - logistic regression: `78.16%`
 - decision trees: `82.07%`
